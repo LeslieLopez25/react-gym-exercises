@@ -1,13 +1,32 @@
 import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import { SearchOffSharp } from "@mui/icons-material";
+
+import { exerciseOptions, fetchData } from "../utils/fetchData";
+import { useFetcher } from "react-router-dom";
 
 const SearchExercises = () => {
   const [search, setSearch] = useState("");
+  const [exercises, setExercises] = useState([]);
+
+  useFetcher;
 
   const handleSearch = async () => {
     if (search) {
-      // const exercisesData = await fetchData();
+      const exercisesData = await fetchData(
+        "https://exercisedb.p.rapidapi.com/exercises/bodyPartList",
+        exerciseOptions
+      );
+
+      const searchedExercise = exercisesData.filter(
+        (exercise) =>
+          exercise.name.toLowerCase().includes(search) ||
+          exercise.target.toLowerCase().includes(search) ||
+          exercise.equipment.toLowerCase().includes(search) ||
+          exercise.bodyPart.toLowerCase().includes(search)
+      );
+
+      setSearch("");
+      setExercises(searchedExercise);
     }
   };
 
