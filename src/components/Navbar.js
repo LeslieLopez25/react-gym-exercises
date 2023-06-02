@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Stack } from "@mui/material";
 
 import Logo from "../assets/images/Logo.png";
+import { Padding } from "@mui/icons-material";
 
 const Navbar = () => {
   return (
@@ -20,7 +21,12 @@ const Navbar = () => {
         <img
           src={Logo}
           alt="logo"
-          style={{ width: "48px", height: "48px", margin: "0, 20px" }}
+          style={{
+            width: "48px",
+            height: "48px",
+            margin: "0, 20px",
+            pt: "50px",
+          }}
         />
       </Link>
       <Stack direction="row" gap="40px" fontSize="24px" alignItems="flex-end">
