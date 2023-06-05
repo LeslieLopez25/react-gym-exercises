@@ -12,7 +12,7 @@ const Navbar = () => {
       justifyContent="space-around"
       sx={{
         gap: { sm: "122px", xs: "40px" },
-        mt: { sm: "32px", xs: "20px" },
+        mt: { sm: "0", xs: "20px" },
         justifyContent: "none",
       }}
       px="20px"
@@ -25,7 +25,6 @@ const Navbar = () => {
             width: "48px",
             height: "48px",
             margin: "0, 20px",
-            pt: "50px",
           }}
         />
       </Link>
