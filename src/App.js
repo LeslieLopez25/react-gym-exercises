@@ -13,7 +13,7 @@ const App = () => {
       width="400px"
       sx={{ width: { xl: "1488px" } }}
       m="auto"
-      bgcolor="#36454f"
+      bgcolor="#353839"
     >
       <Navbar />
       <Routes>

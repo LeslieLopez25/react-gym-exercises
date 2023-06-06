@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Stack } from "@mui/material";
 
 import Logo from "../assets/images/Logo.png";
-import { Padding } from "@mui/icons-material";
 
 const Navbar = () => {
   return (
@@ -25,6 +24,8 @@ const Navbar = () => {
             width: "48px",
             height: "48px",
             margin: "0, 20px",
+            position: "relative",
+            top: "10px",
           }}
         />
       </Link>
@@ -33,7 +34,7 @@ const Navbar = () => {
           to="/"
           style={{
             textDecoration: "none",
-            color: "#3A1212",
+            color: "#fff600 ",
             borderBottom: "3px solid #FF2625",
           }}
         >
@@ -41,7 +42,7 @@ const Navbar = () => {
         </Link>
         <a
           href="#exercises"
-          style={{ textDecoration: "none", color: "#3A1212" }}
+          style={{ textDecoration: "none", color: "#fff600 " }}
         >
           Exercises
         </a>
