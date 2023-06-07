@@ -35,7 +35,7 @@ const Navbar = () => {
           style={{
             textDecoration: "none",
             color: "#fff600 ",
-            borderBottom: "3px solid #FF2625",
+            borderBottom: "3px solid #fff",
           }}
         >
           Home
