@@ -11,7 +11,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => (
     sx={
       bodyPart === item
         ? {
-            borderTop: "4px solid #FF2625",
+            borderTop: "4px solid #fff600",
             background: "#fff",
             borderBottomLeftRadius: "20px",
             width: "270px",
@@ -38,7 +38,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => (
       fontSize="24px"
       fontWeight="bold"
       fontFamily="Alegreya"
-      color="#3A1212"
+      color="#1b1b1b"
       textTransform="capitalize"
     >
       {" "}

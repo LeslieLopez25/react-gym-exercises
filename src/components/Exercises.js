@@ -55,6 +55,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
         fontWeight="bold"
         sx={{ fontSize: { lg: "44px", xs: "30px" } }}
         mb="46px"
+        color="white"
       >
         Showing Results
       </Typography>
