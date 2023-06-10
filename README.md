@@ -1,3 +1,20 @@
+<h1>Elite Surge :muscle:</h1>
+
+<h2>A gym website created using React, RapidAPI, and Material UI.</h2>
+
+<p>This website is responsive and it's built using React with Material UI to style the frontend using RapidAPI to pass youtube videos and the exercise gifs.</p>
+
+### Link
+
+- Live Site: [Elite Surge](https://gym-exercises-a332b.web.app/)
+
+### Screenshots
+
+<img src="./assets/screenshot.png" width="400">
+<img src="./assets/screenshot-2.png" width="400">
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
