@@ -3,8 +3,8 @@ import Pagination from "@mui/material/Pagination";
 import { Box, Stack, Typography } from "@mui/material";
 
 import { exerciseOptions, fetchData } from "../utils/fetchData";
-import ExerciseCard from "./ExerciseCard";
-import Loader from "./Loader";
+import ExerciseCard from "./exercise-card.component";
+import Loader from "./loader.component";
 
 const Exercises = ({ exercises, setExercises, bodyPart }) => {
   const [currentPage, setCurrentPage] = useState(1);
