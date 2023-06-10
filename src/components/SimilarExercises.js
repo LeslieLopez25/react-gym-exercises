@@ -9,16 +9,16 @@ const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => (
     <Typography
       sx={{ fontSize: { lg: "44px", xs: "25px" }, ml: "20px" }}
       fontWeight={700}
-      color="#000"
+      color="#fff"
       mb="33px"
     >
       Similar{" "}
-      <span style={{ color: "#FF2625", textTransform: "capitalize" }}>
+      <span style={{ color: "#fff600", textTransform: "capitalize" }}>
         Target Muscle
       </span>{" "}
       exercises
     </Typography>
-    <Stack direction="row" sx={{ p: 2, position: "relative" }}>
+    <Stack direction="row" sx={{ p: 3, position: "relative" }}>
       {targetMuscleExercises.length !== 0 ? (
         <HorizontalScrollbar data={targetMuscleExercises} />
       ) : (
@@ -32,16 +32,16 @@ const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => (
         mt: { lg: "100px", xs: "60px" },
       }}
       fontWeight={700}
-      color="#000"
+      color="#fff"
       mb="33px"
     >
       Similar{" "}
-      <span style={{ color: "#FF2625", textTransform: "capitalize" }}>
+      <span style={{ color: "#fff600", textTransform: "capitalize" }}>
         Equipment
       </span>{" "}
       exercises
     </Typography>
-    <Stack direction="row" sx={{ p: 2, position: "relative" }}>
+    <Stack direction="row" sx={{ p: 3, position: "relative" }}>
       {equipmentExercises.length !== 0 ? (
         <HorizontalScrollbar data={equipmentExercises} />
       ) : (

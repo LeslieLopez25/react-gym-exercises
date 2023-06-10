@@ -34,23 +34,27 @@ const Detail = ({ exerciseDetail }) => {
           sx={{ fontSize: { lg: "64px", xs: "30px" } }}
           fontWeight={700}
           textTransform="capitalize"
+          color="#fff600"
         >
           {name}
         </Typography>
-        <Typography
-          sx={{ fontSize: { lg: "24px", xs: "18px" } }}
-          color="#4F4C4C"
-        >
+        <Typography sx={{ fontSize: { lg: "24px", xs: "18px" } }} color="#fff">
           Exercises keep you strong.{" "}
           <span style={{ textTransform: "capitalize" }}>{name}</span> bup is one
           of the best <br /> exercises to target your {target}. It will help you
           improve your <br /> mood and gain energy.
         </Typography>
         {extraDetail?.map((item) => (
-          <Stack key={item.name} direction="row" gap="24px" alignItems="center">
+          <Stack
+            key={item.name}
+            direction="row"
+            gap="24px"
+            alignItems="center"
+            color="#fff"
+          >
             <Button
               sx={{
-                background: "#FFF2DB",
+                background: "#080808",
                 borderRadius: "50%",
                 width: "100px",
                 height: "100px",
@@ -59,7 +63,7 @@ const Detail = ({ exerciseDetail }) => {
               <img
                 src={item.icon}
                 alt={bodyPart}
-                style={{ width: "50px", height: "50px" }}
+                style={{ width: "80px", height: "80px" }}
               />
             </Button>
             <Typography
