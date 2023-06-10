@@ -10,8 +10,8 @@
 
 ### Screenshots
 
-<img src="./assets/screenshot.png" width="400">
-<img src="./assets/screenshot-2.png" width="400">
+<img src="./assets/screenshots/screenshot.png" width="400">
+<img src="./assets/screenshots/screenshot-2.png" width="400">
 
 ---
 
