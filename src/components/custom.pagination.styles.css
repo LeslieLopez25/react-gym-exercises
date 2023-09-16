@@ -1,0 +1,10 @@
+.yellow-pagination {
+    .MuiPaginationItem-root.Mui-selected {
+        background-color: yellow;
+        color: black;
+    }
+
+    .MuiPaginationItem-page.MuiPaginationItem-page:hover {
+        background-color: lightyellow;
+    }
+}

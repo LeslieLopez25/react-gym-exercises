@@ -6,6 +6,8 @@ import { exerciseOptions, fetchData } from "../utils/fetchData";
 import ExerciseCard from "./exercise-card.component";
 import Loader from "./loader.component";
 
+import "./custom.pagination.styles.css";
+
 const Exercises = ({ exercises, setExercises, bodyPart }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [exercisesPerPage] = useState(6);
@@ -72,13 +74,13 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
       <Stack sx={{ mt: { lg: "114px", xs: "70px" } }} alignItems="center">
         {exercises.length > 9 && (
           <Pagination
-            color="standard"
-            shape="rounded"
+            variant="outlined"
             defaultPage={1}
             count={Math.ceil(exercises.length / exercisesPerPage)}
             page={currentPage}
             onChange={paginate}
             size="large"
+            className="yellow-pagination"
           />
         )}
       </Stack>
